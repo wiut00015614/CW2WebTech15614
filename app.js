@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', api_route); // API routes
 app.use('/', users_router); // users routes
 
-// redirect to home page if unknown requests requested
+// redirect to users page if unknown requests requested
 app.use((req, res) => {
     res.redirect('/');
 });

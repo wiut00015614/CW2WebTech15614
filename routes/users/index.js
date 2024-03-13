@@ -6,5 +6,6 @@ const users_controller = require('../../controllers/users');
 router.get('/', users_controller.index);
 router.get('/add', users_controller.add);
 router.get('/update', users_controller.update);
+router.get('/update/:id', users_controller.update);
 
 module.exports = router;
