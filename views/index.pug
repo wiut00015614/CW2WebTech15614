@@ -17,6 +17,8 @@ body
             th(scope="col") Seat
             th(scope="col") Actions
         tbody
+footer 
+    p This web application was created to fulfill Web Technology module`s requirements and does not represent an actual company or service.
 script.
   document.addEventListener('DOMContentLoaded', function() {
     axios.get('/api/ticket').then(function(response) {
